@@ -1,0 +1,40 @@
+{
+  "angle_config": {
+    "config": 1,
+    "s1_angle": 15,
+    "s2_angle": 165,
+    "sep": 150
+  },
+  "s1_position_xyz": [
+    2.465925826289068,
+    1.7588190451025207,
+    1.25
+  ],
+  "s2_position_xyz": [
+    0.5340741737109318,
+    1.758819045102521,
+    1.25
+  ],
+  "mic_positions_xyz": [
+    [
+      1.43145,
+      1.5,
+      1.25
+    ],
+    [
+      1.47715,
+      1.5,
+      1.25
+    ]
+  ],
+  "rir_shape": [
+    2,
+    4000
+  ],
+  "n_mics": 2,
+  "channel_selection": [
+    0,
+    1
+  ],
+  "source_subset": "top100 SI-SDRi"
+}

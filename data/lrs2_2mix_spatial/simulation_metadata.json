@@ -1,0 +1,103 @@
+{
+  "input_root": "/project/anhlt/lab-ss/LRS2-2mix/lrs2_rebuild/audio/wav16k/min/tt",
+  "mix_list_path": "/project/anhlt/lab-ss/LRS2-2mix/lrs2_rebuild/create_mix/mix_2_spk_min_tt_mix",
+  "simulation": {
+    "sample_rate": 16000,
+    "room_dim": [
+      3,
+      3,
+      2.5
+    ],
+    "mic_center": [
+      1.5,
+      1.5,
+      1.25
+    ],
+    "mic_spacing_m": 0.0457,
+    "n_mics": 2,
+    "array_angle_deg": 0,
+    "source_distance_m": 1,
+    "source_height_m": 1.25,
+    "speed_of_sound": 343,
+    "image_order": 2,
+    "reflection_coeff": 0.55,
+    "rir_duration_s": 0.25,
+    "output_dtype": "int16",
+    "normalize_each_example": true,
+    "mic_positions_xyz": [
+      [
+        1.43145,
+        1.5,
+        1.25
+      ],
+      [
+        1.47715,
+        1.5,
+        1.25
+      ]
+    ]
+  },
+  "paper_angle_configs": [
+    {
+      "config": 1,
+      "s1_angle": 15,
+      "s2_angle": 165,
+      "sep": 150
+    },
+    {
+      "config": 2,
+      "s1_angle": 30,
+      "s2_angle": 150,
+      "sep": 120
+    },
+    {
+      "config": 3,
+      "s1_angle": 45,
+      "s2_angle": 135,
+      "sep": 90
+    },
+    {
+      "config": 4,
+      "s1_angle": 60,
+      "s2_angle": 120,
+      "sep": 60
+    },
+    {
+      "config": 5,
+      "s1_angle": 75,
+      "s2_angle": 105,
+      "sep": 30
+    }
+  ],
+  "mic_positions_xyz": [
+    [
+      1.43145,
+      1.5,
+      1.25
+    ],
+    [
+      1.47715,
+      1.5,
+      1.25
+    ],
+    [
+      1.52285,
+      1.5,
+      1.25
+    ],
+    [
+      1.56855,
+      1.5,
+      1.25
+    ]
+  ],
+  "folder_layout": "config_xxx/{mix,s1,s2,ref_clean/s1,ref_clean/s2}/<original_filename>.wav",
+  "source_refs": "s1/s2 are reverberant multichannel spatial images. ref_clean/s1 and ref_clean/s2 are mono dry references from the scaled LRS2-2mix refs, padded to the reverberant mix length and multiplied by the same per-example save scale.",
+  "gain_note": "The input tt/s1 and tt/s2 WAV files are already scaled according to the gain values in mix_metadata.csv, so gains are recorded but not applied a second time.",
+  "n_files_per_config": 100,
+  "channel_selection": [
+    0,
+    1
+  ],
+  "source_subset": "top100 SI-SDRi from /project/anhlt/0607/top100_samples/top100.csv"
+}

@@ -1,0 +1,8 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# LRS2-derived audio: the LRS2 licence does not allow public redistribution (see data/README.md)
+data/**/*.wav
